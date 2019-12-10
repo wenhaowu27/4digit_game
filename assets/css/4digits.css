@@ -1,0 +1,98 @@
+body {
+    /* background-image: url("../images/Android.png"); */
+    /* background-image: url("../images/maxresdefault.jpg"); */
+    /* background-color: #0f4c81; */
+    background-color: #fff146;
+    background-repeat: no-repeat;
+}
+
+.descrip {
+    position: absolute;
+    margin: 5px 10px;
+    overflow-inline: visible;
+}
+
+#game_title {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 675px;
+    overflow-inline: visible;
+    z-index: -1;
+}
+
+.row {
+    width: 1024px;
+    display: inline-block;
+    /* justify-items: left; */
+}
+
+#formInput {
+    font-size: 1em;
+    text-align: center;
+    color: #d21034;
+    margin: 15px auto;
+}
+
+.guessContainer {
+    width: 1024px;
+    margin: 30px 30px;
+    text-align: center;
+}
+.userContainer {
+    width: 1024px;
+    margin: 30px 30px;
+    text-align: center;
+}
+
+
+.circlePad {  
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    /* background-color: cornsilk; */
+    font-size: 25px;
+    margin: 10px 15px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.squarePad {  
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    /* background-color: cornsilk; */
+    font-size: 25px;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.winPad {
+    display: inline-block;
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;    
+    font-size: 25px;
+    background: whitesmoke;
+}
+
+#urGuess {
+    display: inline-block;
+    justify-items: center;
+    font-size: 1em;
+    color:aliceblue;
+}
+
+#Loc {
+    display: inline-block;
+}
+/* #compHint {
+    margin-top:20px
+} */
+#scorePad {
+    display: inline-block;
+    widows: 100px;
+    background-color: aliceblue;
+    font-size: 25px;
+}
