@@ -7,15 +7,15 @@ body {
 }
 
 .descrip {
-    position: absolute;
-    margin: 5px 10px;
+    position: absolute;    
+    margin-left: 550px;
     overflow-inline: visible;
 }
 
 #game_title {
     position: absolute;
-    margin-top: 0;
-    margin-left: 675px;
+    margin-top: 0;    
+    margin: 5px 10px;
     overflow-inline: visible;
     z-index: -1;
 }
@@ -34,8 +34,8 @@ body {
 }
 
 .guessContainer {
-    width: 1024px;
-    margin: 30px 30px;
+    width: 600px;
+    margin: 10px 100px;
     text-align: center;
 }
 .userContainer {
