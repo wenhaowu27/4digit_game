@@ -9,7 +9,9 @@ body {
 .descrip {
     position: absolute;    
     margin-left: 550px;
+    width: 350px;
     overflow-inline: visible;
+    clear: both;
 }
 
 #game_title {
