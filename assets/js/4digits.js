@@ -81,6 +81,7 @@ console.log('new_compuetr_number : ' + numGen)
 $(document).on("click", "#numCheck", function(){
     guessCount++
     var userInput = $("#formInput").val().trim();
+    userInput = userInput.substring(0,4)
     numArr = userInput.split("");
     if(numArr.length > 4){
         numArr.pop();
