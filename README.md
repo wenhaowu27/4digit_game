@@ -19,4 +19,4 @@ Input 4 non-repeated number such as 1234. The game will return answer how many n
 
 https://wenhaowu27.github.io/4digit_game/
 
-![4 digits game](./assets/images/4digits_game.png)
+![4 digits game](./assets/images/4digits_Game.png)
