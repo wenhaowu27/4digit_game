@@ -107,7 +107,7 @@ $(document).on("click", "#gameReset", function(){
     $("#Loc").empty();
     $("#formInput").val("")
     numGen = numGenf(number_set);
-    // console.log('new_compuetr_number : ' + numGen)
+    console.log('new_compuetr_number : ' + numGen)
     numDisplay(marker, '.guess');
     guessCount = 0;
 });
