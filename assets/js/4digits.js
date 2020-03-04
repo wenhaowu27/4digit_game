@@ -83,18 +83,23 @@ $(document).on("click", "#numCheck", function(){
     var userInput = $("#formInput").val().trim();
     userInput = userInput.substring(0,4)
     numArr = userInput.split("");
-    if(numArr.length > 4){
-        numArr.pop();
-    }
-    if(a_location.length == 4){
-        // uWon();
-        $("#formInput").val("")
-        hintDisplay1();
-    }else{        
-        numDisplay(numArr, "#urGuess");
-        numComp(numArr, numGen);
-        $("#formInput").val("")
-        hintDisplay();
+    if(deDupe(numArr).length < 4){
+        $("#formInput").val("Numbers must not repeat");
+        return
+    }else{
+        if(numArr.length > 4){
+            numArr.pop();
+        }
+        if(a_location.length == 4){
+            // uWon();
+            $("#formInput").val("")
+            hintDisplay1();
+        }else{        
+            numDisplay(numArr, "#urGuess");
+            numComp(numArr, numGen);
+            $("#formInput").val("")
+            hintDisplay();
+        }
     }
 });
 
