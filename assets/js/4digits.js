@@ -84,7 +84,8 @@ $(document).on("click", "#numCheck", function(){
     userInput = userInput.substring(0,4)
     numArr = userInput.split("");
     if(deDupe(numArr).length < 4){
-        $("#formInput").val("Numbers must not repeat");
+        numDisplay(numArr, "#urGuess");
+        numRepeat();
         return
     }else{
         if(numArr.length > 4){
@@ -206,10 +207,19 @@ function hintDisplay1(){
     uWon();
 }
 
+
 function uWon(){
     var winDiv = $("<div>");
     winDiv.addClass("winPad");    
     winDiv.text("You won!!");
+    $("#Loc").append(winDiv);
+    $("#Loc").append("<br>");
+}
+
+function numRepeat(){
+    var winDiv = $("<div>");
+    winDiv.addClass("winPad");    
+    winDiv.text("Number must not repeat!! - " + guessCount).css("font-size","18px");
     $("#Loc").append(winDiv);
     $("#Loc").append("<br>");
 }

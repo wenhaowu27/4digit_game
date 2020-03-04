@@ -72,10 +72,12 @@ body {
 
 .winPad {
     display: inline-block;
-    width: 250px;
+    width: 350px;
     height: 35px;
     border-radius: 20px;    
     font-size: 25px;
+    padding-top: 5px;
+    margin: 10px 15px;
     background: whitesmoke;
 }
 
@@ -94,7 +96,7 @@ body {
 } */
 #scorePad {
     display: inline-block;
-    widows: 100px;
+    width: 100px;
     background-color: aliceblue;
     font-size: 25px;
 }
