@@ -82,8 +82,8 @@ body {
     animation-iteration-count: infinite;
 }
 @keyframes won {
-    from {background-color: goldenrod;}
-    to {background-color: chartreuse;}
+    from {background-color: #00A591;}
+    to {background-color: lightcoral;}
   }
 
 .repeatPad {
@@ -95,7 +95,14 @@ body {
     padding-top: 5px;
     margin: 10px 15px;
     background: whitesmoke;
+    animation-name: rePeat;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
 }
+@keyframes rePeat {
+    from {background-color: lightgreen;}
+    to {background-color: white;}
+  }
 
 #urGuess {
     display: inline-block;

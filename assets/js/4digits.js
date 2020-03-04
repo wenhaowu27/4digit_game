@@ -219,7 +219,7 @@ function uWon(){
 function numRepeat(){
     var repeatDiv = $("<div>");
     repeatDiv.addClass("repeatPad");    
-    repeatDiv.text("Number must not repeat! - " + guessCount).css("color","red");
+    repeatDiv.text("Number Must Not Repeat! - " + guessCount).css("color","#3F69AA");
     $("#Loc").append(repeatDiv);
     $("#Loc").append("<br>");
 }
