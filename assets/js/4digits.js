@@ -218,8 +218,8 @@ function uWon(){
 
 function numRepeat(){
     var winDiv = $("<div>");
-    winDiv.addClass("winPad");    
-    winDiv.text("Number must not repeat!! - " + guessCount).css("font-size","18px");
+    winDiv.addClass("repeatPad");    
+    winDiv.text("Number must not repeat!! - " + guessCount);
     $("#Loc").append(winDiv);
     $("#Loc").append("<br>");
 }

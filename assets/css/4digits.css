@@ -76,6 +76,15 @@ body {
     height: 35px;
     border-radius: 20px;    
     font-size: 25px;
+    background: whitesmoke;
+}
+
+.repeatPad {
+    display: inline-block;
+    width: 350px;
+    height: 35px;
+    border-radius: 20px;    
+    font-size: 20px;
     padding-top: 5px;
     margin: 10px 15px;
     background: whitesmoke;
