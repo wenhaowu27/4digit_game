@@ -12,6 +12,7 @@ Input 4 non-repeated number such as 1234. The game will return answer how many n
 
 * Randpm generate non-repeated number from 0 to 9
 * Duplicated number checking for both input and random generator
+* Prevent duplicated number 
 * Random generate css color
 * keyframe animate color
 * for loop to generate css shape
