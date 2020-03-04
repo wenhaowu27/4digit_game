@@ -11,7 +11,9 @@ Input 4 non-repeated number such as 1234. The game will return answer how many n
 ### Technologies
 
 * Randpm generate non-repeated number from 0 to 9
+* Duplicated number checking for both input and random generator
 * Random generate css color
+* keyframe animate color
 * for loop to generate css shape
 * Responsive design
 
@@ -22,3 +24,5 @@ https://wenhaowu27.github.io/4digit_game/
 ![4 digits game](./assets/images/4digits_Game.png)
 ![4 digits game](./assets/images/4digits_Game1.png)
 ![4 digits game](./assets/images/4digits_Game2.png)
+![4 digits game](./assets/images/4digits_Game3.png)
+![4 digits game](./assets/images/4digits_Game4.png)
