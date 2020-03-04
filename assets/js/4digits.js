@@ -217,9 +217,9 @@ function uWon(){
 }
 
 function numRepeat(){
-    var winDiv = $("<div>");
-    winDiv.addClass("repeatPad");    
-    winDiv.text("Number must not repeat!! - " + guessCount);
-    $("#Loc").append(winDiv);
+    var repeatDiv = $("<div>");
+    repeatDiv.addClass("repeatPad");    
+    repeatDiv.text("Number must not repeat! - " + guessCount).css("color","red");
+    $("#Loc").append(repeatDiv);
     $("#Loc").append("<br>");
 }

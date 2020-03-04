@@ -77,7 +77,14 @@ body {
     border-radius: 20px;    
     font-size: 25px;
     background: whitesmoke;
+    animation-name: won;
+    animation-duration: .75s;
+    animation-iteration-count: infinite;
 }
+@keyframes won {
+    from {background-color: cornsilk;}
+    to {background-color: cyan;}
+  }
 
 .repeatPad {
     display: inline-block;
