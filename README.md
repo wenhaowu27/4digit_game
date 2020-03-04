@@ -27,3 +27,4 @@ https://wenhaowu27.github.io/4digit_game/
 ![4 digits game](./assets/images/4digits_Game3.png)
 ![4 digits game](./assets/images/4digits_Game4.png)
 ![4 digits game](./assets/images/4digits_Game5.png)
+![4 digits game](./assets/images/4digits_Game6.png)
