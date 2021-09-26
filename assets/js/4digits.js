@@ -80,7 +80,7 @@ console.log('new_compuetr_number : ' + numGen)
 // Perform digits comparison
 $(document).on("click", "#numCheck", function(){
     guessCount++
-    var userInput = $("#formInput").val().trim();
+    var userInput = $("#display").val().trim();
     userInput = userInput.substring(0,4)
     numArr = userInput.split("");
     if(deDupe(numArr).length < 4){
@@ -93,12 +93,12 @@ $(document).on("click", "#numCheck", function(){
         }
         if(a_location.length == 4){
             // uWon();
-            $("#formInput").val("")
+            $("#display").val("")
             hintDisplay1();
         }else{        
             numDisplay(numArr, "#urGuess");
             numComp(numArr, numGen);
-            $("#formInput").val("")
+            $("#display").val("")
             hintDisplay();
         }
     }
@@ -111,11 +111,12 @@ $(document).on("click", "#gameReset", function(){
     $(".guess").empty();
     $("#urGuess").empty();
     $("#Loc").empty();
-    $("#formInput").val("")
+    $("#display").val("")
     numGen = numGenf(number_set);
     console.log('new_compuetr_number : ' + numGen)
     numDisplay(marker, '.guess');
     guessCount = 0;
+    $("#numCheck").prop("disabled", false);
 });
 
 function deDupe(arr){
@@ -214,6 +215,7 @@ function uWon(){
     winDiv.text("You won!!");
     $("#Loc").append(winDiv);
     $("#Loc").append("<br>");
+    $("#numCheck").prop("disabled", true);
 }
 
 function numRepeat(){

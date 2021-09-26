@@ -11,24 +11,24 @@
 </head>
 <body>
    
-        <img id="game_title" src="./assets/images/title.png" alt="title">
+        <!-- <img id="game_title" src="./assets/images/title.png" alt="title"> -->
    
-    <div class="descrip">
+    <!-- <div class="descrip">
         <p><h4>How to Play:</h4></p>
         <p>Guess 4 digit number</p>
         <p>A means digit match, position match</p>
         <p>B means digit match, position not match</p>
-    </div>
+    </div> -->
     <div class="guessContainer">
         <!-- <div class="row"> -->
         
                 <div class="guess"></div>
-                <form id="myForm">        
-                        <input type="number" id="formInput"> 
+                <!-- <form id="myForm">        
+                        <input type="number" id="display"> 
                             
-                </form>
-                <button class="btn btn-primary btn-sm" id="numCheck">Go</button>
-                <button class="btn btn-primary btn-sm" id="gameReset">Reset</button>            
+                </form> -->
+                <!-- <button class="btn btn-primary btn-sm" id="numCheck" style="margin-bottom: 20px;">Go</button>
+                <button class="btn btn-primary btn-sm" id="gameReset" style="margin-bottom: 20px;">Reset</button>             -->
         <!-- </div> -->
 
         <!-- <div class="row">            
@@ -43,8 +43,56 @@
            
     </div>      
     
-
+    <div class="panelContainer">
+        <table>
+            <tr>
+                <td colspan="3" style="margin-bottom: 10px;"><input id="display" name="display" type="text" disabled ></td>
+            </tr>
+            <tr>
+                <td><button value="1" onclick="insert(1)">1</button></td>
+                <td><button value="2" onclick="insert(2)">2</button></td>
+                <td><button value="3" onclick="insert(3)">3</button></td>
+                <td><button value="	&#9003;" onclick='BackSpace()' style="width: 50px;">&#9003;</button></td>
+            </tr>
+            <tr>
+                <td><button value="4" onclick="insert(4)">4</button></td>
+                <td><button value="5" onclick="insert(5)">5</button></td>
+                <td><button value="6" onclick="insert(6)">6</button></td>
+                <td><button value="" onclick="Clear()" style="width: 50px;">C</button></td>
+            </tr>
+            <tr>
+                <td><button value="7" onclick="insert(7)">7</button></td>
+                <td><button value="8" onclick="insert(8)">8</button></td>
+                <td><button value="9" onclick="insert(9)">9</button></td>
+                <td><button value=""  id="gameReset" style="font-size: 12px; width: 50px;">New <br> Game</button></td>
+            </tr>
+            <tr>
+                <td><button value="0" onclick="insert(0)">0</button></td>
+                <td><button value=""  id="numCheck" style="width: 80px; font-size: large;">&#8628;</button></td>
+            </tr>
+    
+        </table>
+    </div>
    
+    <script>
+        function insert(num){
+            $('#display').val($('#display').val()+num)
+        }   
+        function BackSpace(){
+            value = $('#display').val();
+       
+            //using either .slice() or substring() will do the same trick
+           //  $('#display').val(value.substring(0, value.length - 1));
+            $('#display').val(value.slice(0, value.length - 1));
+        }
+        function Clear(){
+            $('#display').val("");
+        }
+        function Enter(){
+            $('#numCheck').val('')
+        }
+             
+       </script>
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

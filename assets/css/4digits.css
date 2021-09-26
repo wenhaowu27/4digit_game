@@ -23,8 +23,9 @@ body {
 }
 
 .row {
-    width: 1024px;
-    display: inline-block;
+    display: inline;
+    margin: auto;
+    justify-content: center;
     /* justify-items: left; */
 }
 
@@ -36,8 +37,10 @@ body {
 }
 
 .guessContainer {
-    width: 600px;
-    margin: 10px 100px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 .userContainer {
@@ -54,7 +57,7 @@ body {
     border-radius: 35px;
     /* background-color: cornsilk; */
     font-size: 25px;
-    margin: 10px 15px;
+    margin: 5px 5px;
     text-align: center;
     color: aliceblue;
 }
@@ -66,7 +69,7 @@ body {
     border-radius: 10px;
     /* background-color: cornsilk; */
     font-size: 25px;
-    margin: 10px 15px;
+    margin: 5px 5px;
     text-align: center;
 }
 
@@ -122,4 +125,37 @@ body {
     width: 100px;
     background-color: aliceblue;
     font-size: 25px;
+}
+
+
+.panelContainer {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+table tr td {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+td {
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: teal;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+button:hover{
+    display: pointer;
+    background: #fff;
+}
+input {
+    width: 170px;
+    text-align: center;
 }
