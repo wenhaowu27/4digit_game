@@ -15,10 +15,13 @@ body {
 }
 
 #game_title {
-    position: absolute;
-    margin-top: 0;    
-    margin: 5px 10px;
-    overflow-inline: visible;
+    /* position: absolute; */
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 10%;
     z-index: -1;
 }
 
