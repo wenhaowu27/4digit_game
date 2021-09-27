@@ -23,6 +23,7 @@ body {
     width: 20%;
     height: 20%;
     z-index: -1;
+    cursor: pointer;
 }
 
 .row {
