@@ -170,21 +170,29 @@ input {
     width: 110px;
     font-size: large;
 }
-@media screen and (max-width: 400px) {  .circlePad {  
+@media screen and (max-width: 400px) {  
+    #game_title {
+        width: 50%;
+        height: 50%;
+    }
+    
+.circlePad {  
     width: 25px;
     height: 25px;
-    border-radius: 25px;
+    border-radius: 20px;
     /* background-color: cornsilk; */
     font-size: 20px;
     margin: 5px 5px;
 }
 
-.squarePad {  
+.squarePad {     
     width: 25px;
     height: 25px;
-    border-radius: 10px;
+    border-radius: 50px;
     /* background-color: cornsilk; */
     font-size: 20px;
     margin: 5px 5px;
+}
+
   }
   
