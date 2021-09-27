@@ -20,8 +20,8 @@ body {
     margin: auto;
     align-items: center;
     justify-content: center;
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
     z-index: -1;
 }
 
@@ -192,6 +192,15 @@ input {
     /* background-color: cornsilk; */
     font-size: 20px;
     margin: 5px 5px;
+}
+button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px 5px 5px 5px;
+}
+input {
+    width: 205px;
 }
 
   }
