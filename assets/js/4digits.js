@@ -117,6 +117,8 @@ $(document).on("click", "#gameReset", function(){
     numDisplay(marker, '.guess');
     guessCount = 0;
     $("#numCheck").prop("disabled", false);
+    $("button").prop("disabled", false);
+    
 });
 
 function deDupe(arr){
