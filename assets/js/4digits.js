@@ -215,7 +215,9 @@ function uWon(){
     winDiv.text("You won!!");
     $("#Loc").append(winDiv);
     $("#Loc").append("<br>");
+    $("#numCheck").val("")
     $("#numCheck").prop("disabled", true);
+    $("button").prop("disabled", true);
 }
 
 function numRepeat(){
