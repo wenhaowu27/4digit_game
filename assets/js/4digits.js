@@ -106,6 +106,8 @@ $(document).on("click", "#numCheck", function(){
 
 //Reset game
 $(document).on("click", "#gameReset", function(){
+    $("#numCheck").prop("disabled", false); 
+    $("button").prop("disabled", false);
     a_location = [];
     b_location = [];
     $(".guess").empty();
@@ -116,10 +118,9 @@ $(document).on("click", "#gameReset", function(){
     console.log('new_compuetr_number : ' + numGen)
     numDisplay(marker, '.guess');
     guessCount = 0;
-    $("#numCheck").prop("disabled", false);
-    $("button").prop("disabled", false);
     
 });
+
 
 function deDupe(arr){
     //check for duplicates, not return them
@@ -220,6 +221,7 @@ function uWon(){
     $("#numCheck").val("")
     $("#numCheck").prop("disabled", true);
     $("button").prop("disabled", true);
+    $("#gameReset").prop("disabled", false);
 }
 
 function numRepeat(){
