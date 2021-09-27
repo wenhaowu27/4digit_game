@@ -1,8 +1,5 @@
 body {
-    /* background-image: url("../images/Android.png"); */
-    /* background-image: url("../images/maxresdefault.jpg"); */
-    /* background-color: #0f4c81; */
-    background-color: #fff146;
+
     background-repeat: no-repeat;
 }
 
@@ -30,7 +27,6 @@ body {
     display: inline;
     margin: auto;
     justify-content: center;
-    /* justify-items: left; */
 }
 
 #formInput {
@@ -59,7 +55,6 @@ body {
     width: 35px;
     height: 35px;
     border-radius: 35px;
-    /* background-color: cornsilk; */
     font-size: 25px;
     margin: 5px 5px;
     text-align: center;
@@ -71,7 +66,6 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 10px;
-    /* background-color: cornsilk; */
     font-size: 20px;
     margin: 5px 5px;
     text-align: center;
@@ -181,7 +175,6 @@ input {
     width: 25px;
     height: 25px;
     border-radius: 20px;
-    /* background-color: cornsilk; */
     font-size: 20px;
     margin: 5px 5px;
 }
@@ -190,7 +183,6 @@ input {
     width: 25px;
     height: 25px;
     border-radius: 50px;
-    /* background-color: cornsilk; */
     font-size: 20px;
     margin: 5px 5px;
 }
